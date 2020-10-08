@@ -25,13 +25,13 @@ void loop() {
     startTime = millis();
     while(millis()<startTime + amount){
       bleMouse.move(0,-1);
-      delay(100);
+      delay(20);
     }
 
     startTime = millis();
     while(millis()<startTime + amount) {
       bleMouse.move(0,1);
-      delay(100);
+      delay(20);
     }
 
     M5.dis.drawpix(0, 0xf00000);
